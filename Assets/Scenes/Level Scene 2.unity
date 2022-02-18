@@ -529,7 +529,7 @@ MonoBehaviour:
   ListExternsionObject:
   - {fileID: 889063386}
   - {fileID: 2071829119}
-  _isExtension: 0
+  _isExtension: 1
   panelCountEnergy: {fileID: 860626286}
   CountEnergy: {fileID: 279597175}
   _energy: 3
