@@ -32,7 +32,6 @@ public class MainLogic : MonoBehaviour
                 if (GetGameObj.GetComponent<CheckClik>().gameTagFigurs == GameTagFigurs.Triangle)
                 {
                     GetTransformationTriagle(CurrentGameobj, GetGameObj);
-
                 }
                 break;
             case GameTagFigurs.Triangle:
@@ -49,6 +48,7 @@ public class MainLogic : MonoBehaviour
             CurrentFigure.gameObject.GetComponent<SpriteRenderer>().sortingOrder = GetFigure.gameObject.GetComponent<SpriteRenderer>().sortingOrder;
             CurrentFigure.gameObject.GetComponent<SpriteRenderer>().sortingOrder +=1;
             RemoveClickToFigure(GetFigure, CurrentFigure);
+            SavePlayerState.SaveCountState(1);
         }
         BaseCheck.ResetFigure();
     }
